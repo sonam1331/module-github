@@ -1,4 +1,4 @@
-groupname1 = "groupfind"
+groupname1 = "sonam-practice"
 
 
 username1 ={ name1 = "sonam01",
