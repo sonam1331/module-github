@@ -12,12 +12,13 @@ env:
 
   aws-region: us-east-1
 
-  my_bucket: sonam-bucket-tf
+  aws_s3_bucket: sonam-bucket-tf
 
-  tf_file: new.tfstate
+  tfstate_file: new.tfstate
+  dynamodb_table: sonam-db
 
-<<<<<<< HEAD
-  dyn_table: sonam-db
+# <<<<<<< HEAD
+  #dyn_table: sonam-db
 =======
   #dyn_table: sonam-db
 >>>>>>> 7bc95e28f869b4941599f61aad25a13b7650717c
@@ -49,7 +50,7 @@ jobs:
 
 
 
-      - name: Terraform HasiCorp SetUp
+      - name: Terraform Hashicorp SetUp
 
         uses: hashicorp/setup-terraform@v2
 
@@ -87,7 +88,7 @@ jobs:
 
         run:
 
-          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" 
+          terraform init -reconfigure -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$new.tfstate" -backend-config="dynamodb_table=$dynamodb_table" 
 
 
 
