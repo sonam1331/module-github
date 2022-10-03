@@ -12,11 +12,11 @@ env:
 
   aws-region: us-east-1
 
-  my_bucket: my-git-new-buck
+  my_bucket: sonam-bucket-tf
 
-  tf_file: hit.tfstate
+  tf_file: new.tfstate
 
-  dyn_table: Github-table
+  dyn_table: sonam-db
 
 
 
