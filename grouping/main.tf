@@ -1,6 +1,6 @@
 module "iam-user"{
     source = "../iamuser"
-    username = "sonam"
+    username = 
 }
 module "iam-group"{
     source = "../iamgrp"
