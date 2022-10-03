@@ -77,7 +77,7 @@ jobs:
 
         run:
 
-          terraform init -reconfigure -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$sonam.tfstate" -backend-config="dynamodb_table=$dynamodb_table" 
+          terraform init -reconfigure -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$tfstate_file" -backend-config="dynamodb_table=$dynamodb_table" 
 
 
 
