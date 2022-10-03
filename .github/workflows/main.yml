@@ -16,7 +16,11 @@ env:
 
   tf_file: new.tfstate
 
+<<<<<<< HEAD
   dyn_table: sonam-db
+=======
+  #dyn_table: sonam-db
+>>>>>>> 7bc95e28f869b4941599f61aad25a13b7650717c
 
 
 
@@ -83,7 +87,7 @@ jobs:
 
         run:
 
-          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" -backend-config="dynamodb_table=$dyn_table"
+          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" 
 
 
 

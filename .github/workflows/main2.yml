@@ -12,11 +12,11 @@ env:
 
   aws-region: us-east-1
 
-  my_bucket: my-git-new-buck
+  my_bucket: sonam-bucket-tf
 
-  tf_file: hit.tfstate
+  tf_file: new.tfstate
 
-  dyn_table: Github-table
+  dyn_table: sonam-db
 
 
 
@@ -69,11 +69,7 @@ jobs:
 
      
 
-      - name: terraform format
-
-        run:
-
-          terraform fmt
+      
 
      
 
@@ -81,29 +77,17 @@ jobs:
 
         run:
 
-          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" -backend-config="dynamodb_table=$dyn_table"
+          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" 
 
 
 
-      - name: terraform validate
-
-        run:
-
-          terraform validate
+  
 
 
 
-      - name: terraform plan
+      - name: terraform destroy
 
         run:
 
-          terraform plan
-
-
-
-      - name: terraform apply
-
-        run:
-
-          terraform apply -auto-approve
+          terraform destroy -auto-approve
 
