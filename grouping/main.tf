@@ -1,6 +1,6 @@
 module "iam-user"{
     source = "../iamuser"
-    username = "sonam"
+    username = var.username1
 }
 module "iam-group"{
     source = "../iamgrp"
@@ -9,9 +9,9 @@ module "iam-group"{
 }
 module "iam-membership"{
     source = "../membership"
-    mmbr = "yuvi"
+    mmbr = var.member1
     username = [for x,y in var.username1:y]
-    groupname = "sonam-practicing"
+    groupname = var.groupname1
 }
 #=======
     #groupname = "ptractise"
