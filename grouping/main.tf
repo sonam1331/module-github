@@ -5,7 +5,7 @@ module "iam-user"{
 module "iam-group"{
     source = "../iamgrp"
 #<<<<<<< HEAD
-    groupname = "sonam-practicing"
+    groupname = var.groupname1
 }
 module "iam-membership"{
     source = "../membership"
