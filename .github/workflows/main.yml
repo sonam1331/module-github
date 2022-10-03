@@ -19,9 +19,9 @@ env:
 
 # <<<<<<< HEAD
   #dyn_table: sonam-db
-=======
+#=======
   #dyn_table: sonam-db
->>>>>>> 7bc95e28f869b4941599f61aad25a13b7650717c
+#>>>>>>> 7bc95e28f869b4941599f61aad25a13b7650717c
 
 
 
