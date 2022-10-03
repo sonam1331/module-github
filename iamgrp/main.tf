@@ -1,4 +1,4 @@
-resource "aws_iam_group" "grouppractice" {
+resource "aws_iam_group" "groupprc" {
     name = var.groupname
 
 }

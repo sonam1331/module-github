@@ -1,4 +1,4 @@
-resource  "aws_iam_user" "son"{
+resource  "aws_iam_user" "naira"{
     for_each = var.username
     name = each.value
 
