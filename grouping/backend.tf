@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
 # #<<<<<<< HEAD
-    bucket = "sonam-bucket-tf"
-    key    = "sonam.tfstate"
-    region = "us-east-1"
+    # bucket = "sonam-bucket-tf"
+    # key    = "sonam.tfstate"
+    # region = "us-east-1"
     #dynamodb="sonam-db"
 # #=======
 #     # bucket = "sonam-bucket-tf"
