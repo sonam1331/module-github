@@ -77,7 +77,7 @@ jobs:
 
         run:
 
-          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" -backend-config="dynamodb_table=$dyn_table"
+          terraform init -reconfigure -backend-config="bucket=$my_bucket" -backend-config="key=$tf_file" 
 
 
 
