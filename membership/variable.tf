@@ -1,10 +1,10 @@
 variable "mmbr"{
-    type = string
+   type = string
 }
  variable "groupname" {
-    type = string
+   type = string
  }
  variable "username"{
-    type = list(any)
-    default = ["01","02","03"]
+   type = list(any)
+   default = ["01","02","03"]
  }
