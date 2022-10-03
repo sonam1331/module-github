@@ -1,4 +1,4 @@
-groupname1 = "practice-group"
+groupname1 = "groupfind"
 
 
 username1 ={ name1 = "sonam01",
@@ -7,6 +7,6 @@ username1 ={ name1 = "sonam01",
     }
 
 
-member1 = "practice-group"
+member1 = "yuvi"
 
 
