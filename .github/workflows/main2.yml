@@ -85,9 +85,9 @@ jobs:
 
 
 
-      # - name: terraform destroy
+      - name: terraform destroy
 
-      #   run:
+        run:
 
-      #     terraform destroy -auto-approve
+          terraform destroy -auto-approve
 
