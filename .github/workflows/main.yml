@@ -14,7 +14,7 @@ env:
 
   aws_s3_bucket: sonam-bucket-tf
 
-  tfstate_file: new.tfstate
+  tfstate_file: sonam.tfstate
   dynamodb_table: sonam-db
 
 # <<<<<<< HEAD
@@ -56,7 +56,7 @@ jobs:
 
         with:
 
-          terraform_version: 1.1.7
+          terraform_version: 1.2.6
 
 
 
@@ -88,7 +88,7 @@ jobs:
 
         run:
 
-          terraform init -reconfigure -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$tfstate_file" -backend-config="dynamodb_table=$dynamodb_table" 
+          terraform init -reconfigure -backend-config="bucket=$aws_s3_bucket" -backend-config="key=$sonam.tfstate" -backend-config="dynamodb_table=$dynamodb_table" 
 
 
 
