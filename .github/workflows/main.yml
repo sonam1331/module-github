@@ -16,7 +16,7 @@ env:
 
   tf_file: new.tfstate
 
-  dyn_table: sonam-db
+  #dyn_table: sonam-db
 
 
 
