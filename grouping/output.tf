@@ -1,5 +1,5 @@
 output "op-module-member"{
-    value = module.iam-membership.user
+    value = module.iam-group-membership.user
 }
 
 output "op-module-group"{
