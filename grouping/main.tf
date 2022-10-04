@@ -7,7 +7,7 @@ module "iam-group"{
 #<<<<<<< HEAD
     groupname = var.groupname1
 }
-module "iam-membership"{
+module "iam-group-membership"{
     source = "../membership"
     mmbr = var.member1
     username = [for x,y in var.username1:y]
